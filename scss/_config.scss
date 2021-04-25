@@ -19,6 +19,12 @@
     flex-direction: column;
 }
 
+@mixin custom-1450 {
+    @media screen and (min-width: 1450px) {
+        @content;
+    }
+}
+
 @mixin custom-1125 {
     @media screen and (max-width: 1125px) {
         @content;

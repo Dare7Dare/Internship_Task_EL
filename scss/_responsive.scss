@@ -1,3 +1,11 @@
+@include custom-1450 {
+    .hero {
+        .checkboxes {
+            padding: 0 20%;
+        }
+    }
+}
+
 @include custom-1125 {
     .features {
         .feature-one-img {
