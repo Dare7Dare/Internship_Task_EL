@@ -1172,9 +1172,9 @@ label::after {
 }
 
 .pricing .price-plans .price-plan-item:nth-child(3) {
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .pricing .price-plans .price-plan-item:nth-child(3) button {

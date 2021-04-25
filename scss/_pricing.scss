@@ -208,7 +208,7 @@
         }
 
         .price-plan-item:nth-child(3) {
-            align-self: stretch;
+            justify-content: flex-start;
             button {
                 background: black;
                 color: white;
