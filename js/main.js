@@ -70,25 +70,6 @@ $(document).on("change", "input[type='checkbox']", function () {
  
 // }
 
-//change currency
-
-$('#currency').html(geoplugin_currencySymbol());
-$('.currency').html(geoplugin_currencySymbol());
-
-var result = document.getElementsByClassName("currency")[0].innerHTML;
-
-if(result == '€' || result == '£') {
-    $('#currency').html(geoplugin_currencySymbol());
-    $('.currency').html(geoplugin_currencySymbol());
-}
-else if (result == 'лв' || result == 'kn' || result == 'kč' || result == 'kr' || result == 'ft' || result == 'zl') {
-    $('#currency').html('€');
-    $('.currency').html('€');
-}
-else {
-    $('#currency').html('$');
-    $('.currency').html('$');
-}
 
 
 //show details
@@ -144,3 +125,27 @@ function showBasicDetails() {
     }
 }
 
+
+
+
+
+
+//change currency
+
+$('#currency').html(geoplugin_currencySymbol());
+$('.currency').html(geoplugin_currencySymbol());
+
+var result = document.getElementsByClassName("currency")[0].innerHTML;
+
+if(result == '€' || result == '£') {
+    $('#currency').html(geoplugin_currencySymbol());
+    $('.currency').html(geoplugin_currencySymbol());
+}
+else if (result == 'лв' || result == 'kn' || result == 'kč' || result == 'kr' || result == 'ft' || result == 'zl') {
+    $('#currency').html('€');
+    $('.currency').html('€');
+}
+else {
+    $('#currency').html('$');
+    $('.currency').html('$');
+}
